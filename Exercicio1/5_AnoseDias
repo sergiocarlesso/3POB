@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite quantos anos a pessoa tem: ");
+        int anos = sc.nextInt();
+
+        int qntdias = anos * 365;
+
+        System.out.println("QUantidade de dias: " + qntdias);
+        sc.close();
+    }
+}
