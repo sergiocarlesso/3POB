@@ -1,0 +1,20 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite o tamanho em cm da base: ");
+        int base = sc.nextInt();
+        System.out.print("Digite o tamanho em cm da altura: ");
+        int altura = sc.nextInt();
+        
+        int area = base * altura;
+        int perimetro = 2 * (base * altura);
+
+        System.out.println("a area do triangulo: " + area);
+        System.out.println("o perimetro do triangulo: " + perimetro);
+        sc.close();
+    }
+}
