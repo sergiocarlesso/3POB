@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#.00");
+
+
+        System.out.print("Digite o salario bruto: ");
+        double salarioBruto = sc.nextDouble();
+        System.out.print("Digite a % de desconto do INSS: ");
+        double descontoINSS = sc.nextdouble();
+        
+        double conversao = (100 - descontoINSS)/100;
+
+        double salarioLiquido = salarioBruto * conversao;
+
+        System.out.println("Salario Liquido: " + df.format(salarioLiquido));
+        sc.close();
+    }
+}
