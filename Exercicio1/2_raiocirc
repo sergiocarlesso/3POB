@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class ConversaoTemperatura {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+     System.out.print("Digite o raio do circulo : ");
+        int raio = sc.nextInt();
+        
+        double pi = 3.14159;
+        double area = pi *(raio * raio);
+
+        System.out.println("A area do circulo:" + area);
+        sc.close();
+    }
+}
