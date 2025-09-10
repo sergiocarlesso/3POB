@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.text.DecimalFormat;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("#.00");
+
+        System.out.print("Digite o valor da coordenada x1: ");
+        double x1 = sc.nextDouble();
+        System.out.print("Digite o valor da coordenada y1: ");
+        double y1 = sc.nextDouble();
+        System.out.print("Digite o valor da coordenada x2: ");
+        double x2 = sc.nextDouble();
+        System.out.print("Digite o valor da coordenada y2: ");
+        double y2 = sc.nextDouble();
+        
+        double distancia= Math.sqrt(((x2 - x1)*(x2 - x1)) + ((y2 - y1)*(y2 - y1))); 
+      
+        System.out.println("Valor da distancia entre os dois pontos " + df.format(distancia));
+        sc.close();
+    }
+}
