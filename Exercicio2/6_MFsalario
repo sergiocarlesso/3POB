@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite o salario bruto: ");
+        double salarioBruto = sc.nextDouble();
+         System.out.print("Digite o seu genero M ou F: ");
+        char genero = sc.nextChar();
+        
+        if (genero ='M'){
+            salarioLiquido = salarioBruto * (95/100);
+        }
+        else {
+            salarioLiquido = salarioBruto * (97/100);
+        }
+            System.out.print(salarioLiquido);
+        }
+        }
