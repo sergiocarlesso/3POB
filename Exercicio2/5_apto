@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite o ano de nascimento: ");
+        int ano = sc.nextInt();
+        
+        int idade = 2025 - ano;
+        
+        if(idade >= 16){
+            System.out.print("Apto!");
+        }
+            else{
+                System.out.print("Inapto!");
+            }
+        }
+     }
