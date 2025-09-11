@@ -4,7 +4,6 @@ public class Triangulo {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
 
-        // Leitura dos lados
         System.out.print("Digite o valor de A: ");
         double A = entrada.nextDouble();
 
