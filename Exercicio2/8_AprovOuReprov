@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class AprovadoOuReprovado {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Quantidade de disciplinas que o aluno foi reprovado: ");
+        int discReprova = sc.nextInt();
+        
+        if (discReprova == 0){
+            System.out.print("Aprovado!");
+        }
+        else
+        if (discReprova <= 5){
+            System.out.print("Recuperação!");
+            }
+                else
+                if(discReprova > 5){
+              System.out.print("Reprovado!");
+        }
+    }
+}
