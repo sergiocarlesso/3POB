@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class MediaAprovado {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Qual a primeira nota do aluno: ");
+        double nota1  = sc.nextDouble();
+        System.out.print("Qual a segunda nota do aluno: ");
+        double nota2  = sc.nextDouble();
+        
+        double media = (nota1 + nota2)/2;
+        
+        if (media >= 7){
+            System.out.print("Aprovado!");
+        }
+        else
+        System.out.print("Qual a terceira nota do aluno: ");
+        double nota3  = sc.nextDouble();
+        
+        double mediafinal = (media + (nota3*2))/3;
+        
+        if(mediafinal >= 6){
+            System.out.print("Aprovado!");
+        }
+            else
+            System.out.print("Reprovado!");
+        }
+}
