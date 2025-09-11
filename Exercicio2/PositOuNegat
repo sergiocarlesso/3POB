@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FaturamentoVendas {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Digite um numero inteiro: ");
+        int numeroint = sc.nextInt();
+        
+        if (numeroint > 0){
+            System.out.print("Positivo!");
+        }
+        else
+        if (numeroint < 0){
+            System.out.print("Negativo!");
+            }
+                else {
+              System.out.print("Nulo!");
+        }
+    }
+}
