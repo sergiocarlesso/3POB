@@ -2,16 +2,16 @@ import java.util.Scanner;
 
 public class Triangulo {
     public static void main(String[] args) {
-        Scanner entrada = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         System.out.print("Digite o valor de A: ");
-        double A = entrada.nextDouble();
+        double A = sc.nextDouble();
 
         System.out.print("Digite o valor de B: ");
-        double B = entrada.nextDouble();
+        double B = sc.nextDouble();
 
         System.out.print("Digite o valor de C: ");
-        double C = entrada.nextDouble();
+        double C = sc.nextDouble();
 
 
         if (A >= B + C || B >= A + C || C >= A + B) {
@@ -25,5 +25,6 @@ public class Triangulo {
                 System.out.println("Escaleno");
             }
         }
+            sc.close();
     }
 }
