@@ -7,13 +7,13 @@ public class SomaNumeros {
         System.out.print("Digite a quantidade de numeros a ser somado: ");
         int n = sc.nextInt();
 
-        int somaNaturais = 0; // variável para somar
+        int somaNaturais = 0;
         for (int i = 1; i <= n; i++) {
             somaNaturais += i;
         }
 
-        System.out.println("A soma dos numeros naturais é: " + somaNaturais);
+     System.out.println("A soma dos numeros naturais é: " + somaNaturais);
 
-        sc.close();
+     sc.close();
     }
 }
